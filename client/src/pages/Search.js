@@ -2,6 +2,7 @@ import React from "react";
 import Form from "../components/Form";
 import Results from "../components/Results";
 import API from "../utils/API";
+import { Container, Row} from "react-bootstrap";
 
 class Search extends React.Component {
     state = {
@@ -46,13 +47,22 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                <Form
-                    search={this.state.search}
-                    handleInputChange={this.handleInputChange}
-                    handleFormSubmit={this.handleFormSubmit}
-                />
-                <h2>Results</h2>
-                <Results books={this.state.books} />
+                <Container>
+                    <Row>
+                        <Form
+                            search={this.state.search}
+                            handleInputChange={this.handleInputChange}
+                            handleFormSubmit={this.handleFormSubmit}
+                        />
+                    </Row>
+                    <br /><br />
+                    <Row>
+                        <h1>Results</h1>
+                    </Row>
+                    <Row>
+                        <Results books={this.state.books} />
+                    </Row>
+                </Container>
             </div>
         )
     }

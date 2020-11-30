@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Results from "../components/Results";
+import { Container, Row} from "react-bootstrap";
 
 class Saved extends Component {
     state = {
@@ -16,8 +17,14 @@ class Saved extends Component {
     render() {
         return (
             <>
-                <h1>Saved books</h1>
-                <Results books={this.state.savedBooks} />
+                <Container>
+                    <Row>
+                        <h1>Saved books</h1>
+                    </Row>
+                    <Row>
+                        <Results books={this.state.savedBooks} />
+                    </Row>
+                </Container>
             </>
         )
     }

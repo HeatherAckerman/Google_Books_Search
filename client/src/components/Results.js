@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import { Container, Button } from "react-bootstrap";
 
 class Results extends Component {
     state = {
@@ -28,17 +29,22 @@ class Results extends Component {
     render() {
         return (
             <>
+            <Container>
                 {this.props.books.map(result => (
                     <div key={result._id}>
-                        <img alt={result.title} className="img-fluid" src={result.image} />
+                        <img alt={result.title} className="img" src={result.image} />
                         <h5>{result.title} by {result.authors}</h5>
                         <p>{result.description}</p>
-                        <a href={result.link} target="blank" >View</a>
-                        <button onClick={() => this.handleSave(result)}>Save
+                        <Button className="btn" href={result.link} target="blank" > View </Button>
+                        <Button className="btn" onClick={() => this.handleSave(result)}> Save 
                             {this.state.savedBooks.map(book => book._id).includes(result._id)}
-                        </button>
+                        </Button>
+                        <br />
+                        <hr />
+                        <br />
                     </div>
                 ))}
+                </Container>
             </>
         )
     }

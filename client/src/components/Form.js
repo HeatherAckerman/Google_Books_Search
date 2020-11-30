@@ -1,20 +1,26 @@
 import React from "react";
-
+import { Container, Row } from "react-bootstrap";
 
 function Form(props) {
     return (
         <>
-            <h1>Google Books search</h1>
-            <input
-                onChange={props.handleInputChange}
-                value={props.search}
-                name="search"
-                type="text"
-                placeholder="Enter text here"
-            />
-            <button onClick={props.handleFormSubmit}>
-                Search
-        </button>
+            <Container>
+                <Row>
+                    <h1>Google Books Search</h1>
+                </Row>
+                <Row>
+                    <input className="input"
+                        onChange={props.handleInputChange}
+                        value={props.search}
+                        name="search"
+                        type="text"
+                       
+                    />
+                    <button className="btn" onClick={props.handleFormSubmit}>
+                        Search
+                    </button>
+                </Row>
+            </Container>
         </>
     );
 }
