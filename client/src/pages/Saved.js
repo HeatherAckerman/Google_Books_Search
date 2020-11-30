@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Results from "../components/Results";
+import SavedResults from "../components/SavedResults";
 import { Container, Row} from "react-bootstrap";
 
 class Saved extends Component {
@@ -22,7 +22,7 @@ class Saved extends Component {
                         <h1>Saved books</h1>
                     </Row>
                     <Row>
-                        <Results books={this.state.savedBooks} />
+                        <SavedResults books={this.state.savedBooks} />
                     </Row>
                 </Container>
             </>

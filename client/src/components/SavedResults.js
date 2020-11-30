@@ -36,9 +36,7 @@ class Results extends Component {
                         <h5>{result.title} by {result.authors}</h5>
                         <p>{result.description}</p>
                         <Button className="btn" href={result.link} target="blank" > View </Button>
-                        <Button className="btn" onClick={() => this.handleSave(result)}> Save 
-                            {this.state.savedBooks.map(book => book._id).includes(result._id ? "Unsave" : "Save")}
-                        </Button>
+                        <Button onClick={() => this.handleSave(result)}> {this.state.savedBooks.map(book => book._id).includes(result._id) ? "Delete" : "Save"}</Button>
                         <br />
                         <hr />
                         <br />
