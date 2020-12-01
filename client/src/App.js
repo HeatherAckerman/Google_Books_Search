@@ -5,8 +5,6 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Switch from "react-bootstrap/esm/Switch";
-
 
 class App extends Component {
   render() {
