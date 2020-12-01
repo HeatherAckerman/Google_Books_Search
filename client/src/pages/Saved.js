@@ -19,7 +19,7 @@ class Saved extends Component {
             <>
                 <Container>
                     <Row>
-                        <h1>Saved books</h1>
+                        <h1 className="title">Saved books</h1>
                     </Row>
                     <Row>
                         <SavedResults books={this.state.savedBooks} />

@@ -57,7 +57,7 @@ class Search extends React.Component {
                     </Row>
                     <br /><br />
                     <Row>
-                        <h1>Results</h1>
+                        <h1 className="title">Results</h1>
                     </Row>
                     <Row>
                         <Results books={this.state.books} />

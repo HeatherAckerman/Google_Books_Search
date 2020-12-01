@@ -6,8 +6,9 @@ function Form(props) {
         <>
             <Container>
                 <Row>
-                    <h1>Google Books Search</h1>
+                    <h1 className="title">Google Books Search</h1>
                 </Row>
+                <br />
                 <Row>
                     <input className="input"
                         onChange={props.handleInputChange}

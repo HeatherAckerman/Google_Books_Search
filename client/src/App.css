@@ -1,17 +1,16 @@
 * {
   font-size: large;
-  text-align: center;
+}
+
+.header {
+  background-color:rgb(240,240,240,.9);
 }
 
 body {
-  background-color: rgb(108, 133, 143);
+  background-color: rgb(237, 238, 187);
 }
 
-h1 {
-  font-size: xx-large;
-  text-align: justify;
-  background-color:  rgb(240,240,240,.2);
-}
+
 
 h5 {
   font-size: x-large;
@@ -40,11 +39,11 @@ p {
 }
 
 .btn {
-  background-color:#49515a;
+  background-color:rgb(237, 238, 187);
   border-radius: 15px;
   font-weight: bold;
   font-size: large;
-  color: rgb(240,240,240,.9);
+  color: black;
   padding: 10px;
   margin: 10px;
 }
